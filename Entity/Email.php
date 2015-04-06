@@ -3,21 +3,25 @@
 namespace BlackBoxCode\Pando\Bundle\UserBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\ORM\Mapping\Index;
 
 /**
  * Email
  *
- * @ORM\Table()
+ * @ORM\Table(
+ *     name="Email",
+ *     indexes={@Index(columns={"emailUser"})}
+ * )
  * @ORM\Entity
  */
 class Email
 {
     /**
-     * @var integer
+     * @var string
      *
-     * @ORM\Column(name="id", type="integer")
+     * @ORM\Column(name="id", type="string")
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
+     * @ORM\GeneratedValue(strategy="UUID")
      */
     private $id;
 

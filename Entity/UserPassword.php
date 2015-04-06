@@ -7,17 +7,17 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * UserPassword
  *
- * @ORM\Table()
+ * @ORM\Table(name="UserPassword")
  * @ORM\Entity
  */
 class UserPassword
 {
     /**
-     * @var integer
+     * @var string
      *
-     * @ORM\Column(name="id", type="integer")
+     * @ORM\Column(name="id", type="string")
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
+     * @ORM\GeneratedValue(strategy="UUID")
      */
     private $id;
 
