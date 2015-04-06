@@ -19,7 +19,7 @@ class User
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="UUID")
      */
-    private $id;
+    protected $id;
 
 
     /**

@@ -23,14 +23,14 @@ class Email
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="UUID")
      */
-    private $id;
+    protected $id;
 
     /**
      * @var string
      *
      * @ORM\Column(name="emailUser", type="string", length=255)
      */
-    private $emailUser;
+    protected $emailUser;
 
 
     /**
