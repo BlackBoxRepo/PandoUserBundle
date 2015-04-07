@@ -28,6 +28,14 @@ class UserPassword
      */
     protected $password;
 
+    /**
+     * @var User
+     *
+     * @ORM\OneToOne(targetEntity="User", inversedBy="userPassword")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    protected $user;
+
 
     /**
      * Get id
@@ -60,5 +68,28 @@ class UserPassword
     public function getPassword()
     {
         return $this->password;
+    }
+
+    /**
+     * Set user
+     *
+     * @param User $user
+     * @return UserPassword
+     */
+    public function setUser($user)
+    {
+        $this->user = $user;
+
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return User
+     */
+    public function getUser()
+    {
+        return $this->user;
     }
 }

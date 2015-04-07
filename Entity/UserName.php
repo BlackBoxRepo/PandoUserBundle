@@ -5,12 +5,12 @@ namespace BlackBoxCode\Pando\Bundle\UserBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * UserCredential
+ * UserName
  *
  * @ORM\Table(name="UserName")
  * @ORM\Entity
  */
-class UserCredential
+class UserName
 {
     /**
      * @var string
@@ -24,9 +24,17 @@ class UserCredential
     /**
      * @var string
      *
-     * @ORM\Column(name="name", type="string", length=255, unique=true)
+     * @ORM\Column(type="string", length=255, unique=true)
      */
     protected $name;
+
+    /**
+     * @var User
+     *
+     * @ORM\OneToOne(targetEntity="User", inversedBy="userName")
+     * @ORM\JoinColumn(nullable=false)
+    */
+    protected $user;
 
 
     /**
@@ -43,7 +51,7 @@ class UserCredential
      * Set name
      *
      * @param string $name
-     * @return UserCredential
+     * @return UserName
      */
     public function setName($name)
     {
@@ -60,5 +68,28 @@ class UserCredential
     public function getName()
     {
         return $this->name;
+    }
+
+    /**
+     * Set user
+     *
+     * @param User $user
+     * @return UserName
+     */
+    public function setUser($user)
+    {
+        $this->user = $user;
+
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return User
+     */
+    public function getUser()
+    {
+        return $this->user;
     }
 }
