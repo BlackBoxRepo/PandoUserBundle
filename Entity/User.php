@@ -16,7 +16,7 @@ class User
     /**
      * @var string
      *
-     * @ORM\Column(name="id", type="string")
+     * @ORM\Column(type="string")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="UUID")
      */
@@ -62,7 +62,7 @@ class User
     }
 
     /**
-     * Set UserName
+     * Set userName
      *
      * @param UserName $userName
      * @return User
@@ -75,7 +75,7 @@ class User
     }
 
     /**
-     * Get UserName
+     * Get userName
      *
      * @return UserName
      */
@@ -85,7 +85,7 @@ class User
     }
 
     /**
-     * Set UserPassword
+     * Set userPassword
      *
      * @param UserPassword $userPassword
      * @return User
@@ -98,7 +98,7 @@ class User
     }
 
     /**
-     * Get UserPassword
+     * Get userPassword
      *
      * @return UserPassword
      */
@@ -108,7 +108,7 @@ class User
     }
 
     /**
-     * Add Email
+     * Add email
      *
      * @param Email $email
      * @return User
@@ -121,7 +121,7 @@ class User
     }
 
     /**
-     * Remove Email
+     * Remove email
      *
      * @param Email $email
      * @return User
@@ -142,7 +142,7 @@ class User
     }
 
     /**
-     * Add Role
+     * Add role
      *
      * @param Role $role
      * @return User
@@ -155,7 +155,7 @@ class User
     }
 
     /**
-     * Remove Role
+     * Remove role
      *
      * @param Role $role
      * @return User
@@ -168,6 +168,8 @@ class User
     }
 
     /**
+     * Get roles
+     *
      * @return ArrayCollection<Role>
      */
     public function getRoles()

@@ -15,7 +15,7 @@ class Role
     /**
      * @var string
      *
-     * @ORM\Column(name="id", type="string")
+     * @ORM\Column(type="string")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="UUID")
      */

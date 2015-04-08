@@ -18,7 +18,7 @@ class Email
     /**
      * @var string
      *
-     * @ORM\Column(name="id", type="string")
+     * @ORM\Column(type="string")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="UUID")
      */
@@ -80,7 +80,7 @@ class Email
     }
 
     /**
-     * Set Domain
+     * Set domain
      *
      * @param Domain $domain
      * @return Email
@@ -93,7 +93,7 @@ class Email
     }
 
     /**
-     * Get Domain
+     * Get domain
      *
      * @return Domain
      */
@@ -103,7 +103,7 @@ class Email
     }
 
     /**
-     * Set User
+     * Set user
      *
      * @param User $user
      * @return Email
@@ -116,7 +116,7 @@ class Email
     }
 
     /**
-     * Get User
+     * Get user
      *
      * @return User
      */
