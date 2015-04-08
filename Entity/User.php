@@ -50,6 +50,14 @@ class User
      */
     protected $roles;
 
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->emails = new ArrayCollection();
+        $this->roles  = new ArrayCollection();
+    }
 
     /**
      * Get id
