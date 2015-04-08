@@ -50,6 +50,7 @@ class User
      */
     protected $roles;
 
+
     /**
      * Constructor
      */
