@@ -63,7 +63,7 @@ class User
     /**
      * Get id
      *
-     * @return integer 
+     * @return string
      */
     public function getId()
     {

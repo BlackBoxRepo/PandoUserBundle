@@ -40,7 +40,7 @@ class UserName
     /**
      * Get id
      *
-     * @return integer 
+     * @return string
      */
     public function getId()
     {

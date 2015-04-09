@@ -40,7 +40,7 @@ class UserPassword
     /**
      * Get id
      *
-     * @return integer 
+     * @return string
      */
     public function getId()
     {

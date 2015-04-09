@@ -32,7 +32,7 @@ class Role
     /**
      * Get id
      *
-     * @return integer 
+     * @return string
      */
     public function getId()
     {

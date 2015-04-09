@@ -49,7 +49,7 @@ class Email
     /**
      * Get id
      *
-     * @return integer 
+     * @return string
      */
     public function getId()
     {
