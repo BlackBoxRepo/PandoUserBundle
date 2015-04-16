@@ -1,10 +1,12 @@
 <?php
 namespace BlackBoxCode\Pando\Bundle\UserBundle\Model;
 
-interface RoleInterface
+use BlackBoxCode\Pando\Bundle\BaseBundle\Model\HasIdInterface;
+
+interface RoleInterface extends HasIdInterface
 {
-    const ROLE_USER  = 'ROLE_USER';
     const ROLE_ADMIN = 'ROLE_ADMIN';
+    const ROLE_USER  = 'ROLE_USER';
 
     /**
      * @param string $name
