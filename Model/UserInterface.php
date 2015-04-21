@@ -18,15 +18,15 @@ interface UserInterface extends IdInterface
     public function setUserName(UserNameInterface $userName);
 
     /**
-     * @return PasswordInterface
+     * @return UserPasswordInterface
      */
     public function getPassword();
 
     /**
-     * @param PasswordInterface $password
+     * @param UserPasswordInterface $password
      * @return $this
      */
-    public function setPassword(PasswordInterface $password);
+    public function setPassword(UserPasswordInterface $password);
 
     /**
      * @return ArrayCollection<EmailInterface>
