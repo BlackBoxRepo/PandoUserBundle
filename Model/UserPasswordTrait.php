@@ -21,7 +21,7 @@ trait UserPasswordTrait
     /**
      * @var UserInterface
      *
-     * @ORM\OneToOne(targetEntity="User", inversedBy="userName")
+     * @ORM\OneToOne(targetEntity="User", inversedBy="password")
      * @ORM\JoinColumn(nullable=false)
      */
     private $user;
