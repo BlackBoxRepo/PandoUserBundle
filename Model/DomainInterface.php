@@ -1,7 +1,7 @@
 <?php
-namespace BlackBoxCode\Pando\Bundle\UserBundle\Model;
+namespace BlackBoxCode\Pando\UserBundle\Model;
 
-use BlackBoxCode\Pando\Bundle\BaseBundle\Model\TypeInterface;
+use BlackBoxCode\Pando\BaseBundle\Model\TypeInterface;
 
 interface DomainInterface extends TypeInterface
 {
